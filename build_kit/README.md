@@ -2,7 +2,7 @@
 
 ## BuildKit brief introduction
 
-From the Docker Manuals,
+From the Docker Manual,
 
 > BuildKit is an improved backend to replace the legacy builder. It comes with new and much improved functionality for improving your builds’ performance and the reusability of your Dockerfiles.
 
@@ -17,7 +17,3 @@ Here are the docs for the `--output` flag: https://docs.docker.com/engine/refere
 Take a look at the Dockerfile and feel free to run it by running the `tryme.sh` script.
 
 If successful, you should see a directory called `sandbox` created and within it two new files, `first.file` and `second.file`.
-
-## My environment
-
-I'm using darwin/amd64, Docker version 20.10.12.
