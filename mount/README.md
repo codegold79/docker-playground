@@ -10,6 +10,10 @@ I pulled them in via RUN --mount, made some changes, and showed the changes.
 These changes did not affect the local files in my Docker context.
 To get the changes transferred over, refer to my other playground experiment in `build-kit` where I use `--output` to copy over files from a Dockerfile build stage to the local machine.
 
+Note: I don't think you can save anything built in a mount for use in a different stage.
+In order to use files prepared in a mount in another stage, copy over files while in the --mount line to a directory, like `/bin`.
+The contents in the `/bin` directly will be preserved to be copied over in a different stage.
+
 ## Try it
 
 Run the tryme./sh script.
